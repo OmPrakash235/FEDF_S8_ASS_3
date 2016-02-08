@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>HTML5 Form</title>
+	</head>
+	<style>
+		.formDiv {
+			width: 200px;
+			margin: auto;
+		}
+		input, textarea {
+				margin: 5px 0;
+				padding: 5px 10px;
+				width: 100%;
+		}
+		input[type="color"], input[type="submit"] {
+				min-width: 80px;
+    		width: auto;
+		}
+	</style>
+	<body>
+		<div class="formDiv">
+			<p style="text-align: center;">Fill th Form</p>
+			<form>
+				<input type="email" placeholder="Email" required="true"/>
+				<input type="password" placeholder="Password" required="true"/>
+				<input type="url" placeholder="Your Project URL" required="true"/>
+				<input type="date" placeholder="Project completion date" required="true"/>
+				<input type="month" placeholder="Current month" required="true"/>
+				<input type="week" placeholder="Current week" required="true"/>
+				<input type="time" placeholder="Current time" required="true"/>
+				<div><label>Select color: </label><input type="color" required="true"/></div>
+				<div><label>Age: </label><input type="range" placeholder="Name" required="true"/></div>
+				<textarea required="true"></textarea>
+				<input type="submit" value="Submit"/>
+			</form>
+		</div>
+	</body>
+</html>
